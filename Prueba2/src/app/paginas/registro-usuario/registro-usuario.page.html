@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Nombre(s)</ion-label>
+      <ion-input [clearInput]="true" name="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Apellido(s)</ion-label>
+      <ion-input [clearInput]="true" name="Apellido"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Edad</ion-label>
+      <ion-input [clearInput]="true" type="number" name="Edad"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Usuario</ion-label>
+      <ion-input [clearInput]="true" name="Usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input [clearInput]="true" type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Año de Nacimiento</ion-label>
+      <ion-input [clearInput]="true" type="number" name="nacimiento"></ion-input>
+    </ion-item>
+
+    <h6>Genero</h6>
+    <ion-radio-group>
+      <ion-item>
+        <ion-label>
+          <code>Femenino</code>
+        </ion-label>
+        <ion-radio value="femenino"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <code>Masculino</code>
+        </ion-label>
+        <ion-radio value="masculino"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <code>Prefiero no especificar</code>
+        </ion-label>
+        <ion-radio value="noEspe"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button>Iniciar Sesion</ion-button>
+  <ion-button>Registrarse</ion-button>
+</ion-content>
